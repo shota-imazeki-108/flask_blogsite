@@ -1,5 +1,6 @@
 from flask import render_template, request, Blueprint
 from flaskblog.models import Post
+import markdown
 
 
 main = Blueprint('main', __name__)
@@ -16,4 +17,7 @@ def home():
 
 @main.route('/about')
 def about():
-    return render_template('about.html', title='About')
+    readme_file = open("flaskblog/markdown/ABOUT.md", "r")
+    md_to_html = markdown.markdown(readme_file.read(), encoding="utf8")
+
+    return render_template('about.html', about=md_to_html)
