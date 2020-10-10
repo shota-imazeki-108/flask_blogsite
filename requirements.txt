@@ -7,3 +7,4 @@ flask-login
 flask-mail
 flask_sqlalchemy
 Pillow
+Markdown
