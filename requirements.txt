@@ -6,6 +6,4 @@ flask-bcrypt
 flask-login
 flask-mail
 flask_sqlalchemy
-gunicorn
 Pillow
-psycopg2
