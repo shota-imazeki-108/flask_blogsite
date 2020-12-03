@@ -8,3 +8,6 @@ flask-mail
 flask_sqlalchemy
 Pillow
 Markdown
+requests-oauthlib==1.3.0
+Janome==0.3.10
+wordcloud==1.7.0
