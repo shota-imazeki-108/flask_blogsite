@@ -1,11 +1,7 @@
+gunicorn
 flask
 flask-wtf
-email_validator
-SQLAlchemy
 flask-bcrypt
-flask-login
-flask-mail
-flask_sqlalchemy
 Pillow
 Markdown
 requests-oauthlib==1.3.0
