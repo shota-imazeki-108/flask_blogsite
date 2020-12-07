@@ -1,0 +1,10 @@
+# デプロイ
+sudo rm -r /var/www/blog/flask_blogsite/*
+git clone git@github.com:shota-imazeki-108/flask_blogsite.git
+cd flask_blogsite/
+sudo cp -r * /var/www/blog/flask_blogsite/
+
+# root権限にて作業
+sudo su -
+cd /var/www/blog/flask_blogsite/
+pip install -r requrements.txt
