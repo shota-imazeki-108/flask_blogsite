@@ -9,3 +9,4 @@ Janome==0.3.10
 wordcloud==1.7.0
 tensorflow-gpu==1.15
 googledrivedownloader
+tqdm

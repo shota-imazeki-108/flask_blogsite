@@ -7,4 +7,4 @@ sudo cp -r * /var/www/blog/flask_blogsite/
 # root権限にて作業
 sudo su -
 cd /var/www/blog/flask_blogsite/
-pip install -r requrements.txt
+pip install -r requirements.txt
