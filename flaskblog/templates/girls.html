@@ -1,0 +1,17 @@
+{% extends "layout.html" %}  
+{% block content %}  
+<div class="content-section">  
+    <form method="POST" action="">  
+        {{ form.hidden_tag() }}  
+        <fieldset class="form-group">  
+            <legend class="border-bottom md-4">{{ legend }}</legend> 
+        </fieldset>  
+        <div class="form-group">  
+            {{ form.submit(class="btn btn-outline-info") }}  
+        </div>  
+    </form>
+    <div class="media">
+      <img  src="{{ image_file }}"　class="image-vw">
+    </div>
+</div>  
+{% endblock content %}

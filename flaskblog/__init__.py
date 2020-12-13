@@ -14,11 +14,13 @@ def create_app(config_class=Config):
 
     from flaskblog.main.routes import main
     from flaskblog.wordcloud.routes import wordcloud
+    from flaskblog.girls.routes import girls
     from flaskblog.errors.handlers import errors
 
     # Blueprintに登録
     app.register_blueprint(main)
-    app.register_blueprint(errors)
     app.register_blueprint(wordcloud)
+    app.register_blueprint(girls)
+    app.register_blueprint(errors)
 
     return app
